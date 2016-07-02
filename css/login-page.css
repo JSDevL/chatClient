@@ -1,0 +1,89 @@
+/********************************
+OVERRIDE NORMALISE
+********************************/
+
+body{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    width: 100%;
+    height: 100%;
+    
+    background: #272C30;
+}
+
+.row{
+    margin:0px;
+}
+
+/********************************
+BEFORE LOGIN
+********************************/ 
+
+#floatingLoginBox{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    
+    width: 100%;
+    
+    text-align: center;
+    
+    z-index:1;
+    
+    transform: translateY(-50%);
+}
+
+#loginForm{
+    background: #363E41;
+    
+    width: 300px;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #4c4c4c;
+    border-width: 1px;
+    
+    overflow: hidden;
+}
+
+#loginForm img{
+    width: 100px;
+    height: 100px;
+    margin:20px;
+    
+    border-radius: 100%;
+}
+
+.form-group{
+    padding: 20px;
+    margin: 0px;
+    background : none;
+}
+
+.form-group button{
+    background: none;
+    font-weight: bold;
+    color: #eee;
+    margin: 20px 0px 0px 0px;
+}
+
+/********************************
+AFTER LOGIN
+********************************/
+
+#loginForm.loggedIn{
+    transition : background 1s linear;
+    
+    background: #55dd55;
+}
+
+#loginForm.loggedIn input{
+    transition : all 0.2s linear;
+    background: inherit !important;
+    border: none;
+    outline: none;
+    color: white;
+}

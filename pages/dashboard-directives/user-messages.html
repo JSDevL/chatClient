@@ -1,0 +1,8 @@
+<div ng-class="{'sent-message': msgType({m:msg}) == 'sent','received-message': msgType({m:msg}) == 'received'}">
+    
+    <img ng-if="msgType({m:msg}) == 'received'" class="user-profile" src="../images/users/{{contact}}.jpeg">
+    <p ng-if="msgType({m:msg}) == 'received'">{{msg.received}}</p>
+    <p ng-if="msgType({m:msg}) == 'sent'">{{msg.sent}}</p> 
+    <img ng-if="msgType({m:msg}) == 'sent'" class="user-profile" src="../images/users/{{user}}.jpeg">
+    
+</div>

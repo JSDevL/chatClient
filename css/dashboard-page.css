@@ -1,0 +1,598 @@
+html{
+    background: #272C30;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #272C30;
+}
+
+/******************************************************
+
+Main-Nav
+
+******************************************************/
+
+#main-nav .nav{
+    color: inherit;
+    font-weight: bold;
+}
+
+#main-nav .nav li{
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #4c4c4c;
+    box-sizing: border-box;
+}
+
+#main-nav .nav li:last-child{
+    border-width: 0px 0px 0px 0px;
+}
+
+#main-nav .nav li.active{
+    border-width: 0px 1px 0px 0px;
+    
+    -moz-box-shadow:    inset 0px 3px 0px 0px #00AEDB;
+    -webkit-box-shadow: inset 0px 3px 0px 0px #00AEDB;
+    box-shadow:         inset 0px 3px 0px 0px #00AEDB;
+}
+
+#main-nav .nav a{
+    color: inherit;
+    font-size: 1rem;
+}
+
+#main-nav .nav li.active a{
+    color: white;
+}
+
+#main-nav li.user-profile-container a{
+    padding: 5px 15px;
+}
+
+#main-nav img.user-profile{
+    line-height: 0px;
+    border-radius: 100%;
+    width: 4rem;
+}
+
+/******************************************************
+
+Column-Heads
+
+******************************************************/
+
+p.navbar-right{
+    margin: 7px 0px;
+}
+
+p.navbar-left{
+    display: block;
+    padding: 9.5px 0px 0px 0px;
+    margin: 7px 0px;
+}
+
+.column-head .glyphicon{
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-color: grey;
+    
+    padding: 9.5px;
+    margin: 0px 0px 0px 10px;
+}
+
+/***************************
+
+Search-Head
+
+***************************/
+
+#search form{
+    margin: 7px 0px;
+    padding: 0px;
+}
+
+#search input{
+    background: inherit;
+    border-color: grey;
+    color: grey;
+}
+
+/******************************************************
+
+Column-contents
+
+******************************************************/
+
+/***************************
+
+Contacts-column
+
+***************************/
+
+#contacts .column-contents .contact{
+    display: block;
+    padding: 15px;
+    
+    color: grey;
+}
+
+#contacts .column-contents .contact:hover{
+    background: #363E41;
+    text-decoration: none;
+}
+
+#contacts .contact.online:before{
+    content: '';
+    display: inline-block;
+    
+    width:10px;
+    height: 10px;
+    
+    background: #55ff55;
+    border-radius: 100%;
+}
+
+#contacts .contact.offline:before{
+    content: '';
+    display: inline-block;
+    width:10px;
+    height: 10px;
+    
+    background: #ff5555;
+    border-radius: 100%;
+}
+
+#contacts .contact img{
+    display: inline-block;
+    width: 60px;
+    border-radius: 100%;
+    margin:0px 10px;
+}
+
+#contacts .contact .user-details{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#contacts .contact .user-name{
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+    padding:0px;
+    margin:0px;
+}
+
+#contacts .contact .user-location{
+    padding:0px;
+    margin:0px;
+}
+
+
+#contacts .contact .user-location span{
+    margin-right:5px;
+}
+
+/***************************
+
+Conversations-column
+
+***************************/
+
+#conversations .column-contents .snippet{
+    display: block;
+    min-height : 90px;
+    position: relative;
+    padding: 15px;
+    
+    color: grey;
+}
+
+#conversations .column-contents .snippet.unread:after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+    background: grey;
+    
+    border-radius: 100%;
+}
+
+
+#conversations .column-contents .snippet.active{
+    display: block;
+    padding: 15px;
+    
+    background: #202528;
+    
+    -moz-box-shadow:    inset 3px 0px 0px 0px #00AEDB;
+    -webkit-box-shadow: inset 3px 0px 0px 0px #00AEDB;
+    box-shadow:         inset 3px 0px 0px 0px #00AEDB;
+}
+
+#conversations .column-contents .snippet:hover{
+    background: #363E41;
+    text-decoration: none;
+}
+
+#conversations .snippet img{
+    display: block;
+    float: left;
+    
+    width: 60px;
+    border-radius: 100%;
+    margin:0px 10px;
+}
+
+#conversations .snippet .user-details{
+    display: block;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+#conversations .snippet .user-name{
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+    padding:0px;
+    margin:0px;
+    
+    color: #ddd;
+}
+
+#conversations .snippet .user-snippet{
+    padding:0px;
+    margin:0px;
+}
+
+/***************************
+
+Chatbox-column
+
+***************************/
+
+#chatbox{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    padding: 15px;
+    margin: 0px;
+}
+
+#chatbox .user-profile{
+    display: block;
+    
+    width: 60px;
+    border-radius: 100%;
+    margin:0px 0px;
+}
+
+#chatbox .sent-message{
+    display: inline-block;
+    position: relative;
+    
+    max-width: 100%;
+    min-height: 75px;
+    
+    float: right;
+    clear: both;
+    padding: 0px 75px 0px 0px;
+    
+    color: #fff;
+}
+
+#chatbox .sent-message .user-profile{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#chatbox .sent-message p{
+    position: relative;
+    
+    display: block;
+    width: 600px;
+    max-width:100%;
+    
+    background: #00AEDB;
+    padding: 15px;
+    
+    border-radius: 5px;
+}
+
+#chatbox .sent-message p:before{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    
+    position: absolute;
+    right: -10px;
+    top: 20px;
+    
+    border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-left:10px solid #00AEDB; 
+}
+
+#chatbox .received-message{
+    display: inline-block;
+    position: relative;
+    
+    max-width: 100%;
+    min-height: 75px;
+    
+    float: left;
+    clear: both;
+    
+    padding: 0px 0px 0px 90px;
+    
+    color: #ddd;
+}
+
+#chatbox .received-message .user-profile{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#chatbox .received-message p{
+    position: relative;
+    
+    display: block;
+    width: 600px;
+    max-width:100%;
+    
+    background: #363E41;
+    padding: 15px;
+    
+    border-radius: 5px;
+}
+
+#chatbox .received-message p:before{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    
+    border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid #363E41; 
+}
+
+#chatbox-container #chatbox-form textarea{
+    display: block;
+    width: 100%;
+    height: 85px;
+    
+    padding: 15px;
+    
+    background: #202528;
+    color: #ddd;
+    
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #4c4c4c;
+    box-sizing: border-box;
+    
+    margin: 0px;
+    resize: none;
+    overflow-y: hidden;
+}
+
+#chatbox-container #chatbox-form textarea:focus{
+    outline: none;
+}
+
+#chatbox-container #chatbox-form #send-button{
+    display: block;
+    width: 100%;
+    height: 35px;
+    
+    line-height: 25px;
+    text-align: right;
+    
+    padding:0px 15px;
+    margin: 0px;
+    
+    background: #202528;
+    color: grey;
+    
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: #4c4c4c;
+    box-sizing: border-box;
+    
+    font-weight: bold;
+}
+
+#chatbox-container #chatbox-form #send-button:hover{
+    text-decoration: none;
+}
+
+
+
+ body{
+        width:100%;
+        height: 100%;
+    }
+    
+    body > div.container-fluid{
+        width: 100%;
+        height:100%;
+        
+        padding: 0px; /*overwrite BS*/
+    }
+    
+    body > div.container-fluid > *{
+        float:left; /*prevent gaps*/
+    }
+    
+    #main-nav{
+        display: inline-block;
+        width: 100%;
+
+        background: #363E41;
+
+        color: grey;
+    }
+    
+    #content{
+        height: 100%;
+        width: 100%;
+        
+        position: relative;
+        left:0px;
+        top: -50px;
+        padding-top:50px;
+        margin:0px;
+    }
+    
+    #chatbox-container #chatbox-form{
+        margin: 0px 0px 15px 0px;
+    }
+    
+    .column-head{
+        display: inline-block;
+        float: left;
+        
+        width: 100%;
+        background: #363E41;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color: #4c4c4c;
+        box-sizing: border-box;
+
+        color: grey;
+        font-size: 1.3rem;
+        
+        margin: 0px;
+        padding: 0 15px;
+    }
+    
+    .column-contents{
+        width: 100%;
+        height: 100%;
+        
+        background: #272C30;
+        color: grey;
+
+        border-style: solid;
+        border-width: 0px 1px 0px 1px;
+        border-color: #4c4c4c;
+        box-sizing: border-box;
+        
+        overflow-y: auto;
+        
+        padding: 0 15px;
+    }
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 992px) { 
+    
+   .column{
+        padding-bottom: 50px;
+    }
+    
+    .column:nth-child(1){
+        width: 25%;
+        height: 100%;
+        
+        float: left;
+    }
+    
+    .column:nth-child(2){
+        display: none;
+    }
+    
+    .column:nth-child(3){
+        width: 75%;
+        height: 100%;
+        
+        float: right;
+    }
+    
+}
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and ( min-width: 992px ) and ( max-width: 1200px ) { 
+    
+    .column{
+        padding-bottom: 50px;
+    }
+    
+    .column:nth-child(1){
+        width: 25%;
+        height: 100%;
+        
+        float: left;
+    }
+    
+    .column:nth-child(2){
+        display: none;
+    }
+    
+    .column:nth-child(3){
+        width: 75%;
+        height: 100%;
+        
+        float: right;
+    }
+    
+}
+
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+    
+    .column{
+        padding-bottom: 50px;
+        
+        float: left;
+    }
+    
+    .column:nth-child(1){
+        width: 25%;
+        height: 100%;
+    }
+    
+    .column:nth-child(2){
+        width: 25%;
+        height: 100%;
+    }
+    
+    .column:nth-child(3){
+        width: 50%;
+        height: 100%;
+    }
+
+}

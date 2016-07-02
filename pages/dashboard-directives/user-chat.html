@@ -1,0 +1,7 @@
+<a class="row snippet" ng-class="{ unread : !chat.isRead, active: chat.cName == currentContact }">
+    <img class="user-profile" src="../images/users/{{chat.cName}}.jpeg">
+    <div class="user-details">
+        <p class="user-name">{{chat.cName}}</p>
+        <p class="user-snippet">{{ lastMsg( { messages : chat.messages } ) }}</p>
+    </div>
+</a>

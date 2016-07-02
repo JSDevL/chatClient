@@ -1,0 +1,7 @@
+<a class="row contact" ng-class="{ online : contactDetails.isOnline, offline : !contactDetails.isOnline }">
+    <img class="user-profile" src="../images/users/{{contact}}.jpeg">
+    <div class="user-details">
+        <p class="user-name">{{contact}}</p>
+        <p class="user-location"><span class="glyphicon glyphicon-map-marker"></span>{{contactDetails.uLocation}}</p>
+    </div>
+</a>

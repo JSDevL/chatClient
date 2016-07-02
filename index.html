@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>My collab App</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+        <!-- Angular -->
+        <script src="vendor/angular.min.js" ></script>
+        <!-- Angular-Route -->
+        <script src="vendor/angular-route.min.js" ></script>
+        <!-- Angular-Cookies -->
+        <script src="vendor/angular-cookies.min.js" ></script>
+        
+        <!-- Firebase -->
+        <script src="vendor/firebase.js"></script>
+        
+        <!-- MyApp-views-controller -->
+        <script src="js/viewController.js" ></script>
+        <!-- login-page-controller -->
+        <script src="js/loginPage.js"></script>
+        <!-- dashboard-controller -->
+        <script src="js/dashboardPage.js"></script>
+    </head>
+    
+    <body ng-view>
+    </body>
+    
+    <!--
+    <script>
+        var resizeColumns = function(){
+            var columnContentsDiv = document.getElementsByClassName('column-contents');
+
+            for( var i=0; i<columnContentsDiv.length; i++ )
+            {
+                columnContentsDiv[i].style.height = document.getElementsByTagName('html')[0].clientHeight - columnContentsDiv[i].offsetTop - document.getElementsByClassName('column-head')[0].clientHeight - 2 + 'px';
+            }
+        };
+
+        resizeColumns();
+
+        window.onresize = function()
+        {
+            resizeColumns();
+        }
+    </script>
+-->
+    
+</html>
